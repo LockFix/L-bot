@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게임 패치 노트</title>
+    <style>
+        /* CSS 스타일 직접 포함 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .patch-notes {
+            margin-top: 20px;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 24px;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>게임 패치 노트</h1>
+        </header>
+        <main>
+            <section class="patch-notes">
+                <h2>패치 노트 - 버전 X.X.X</h2>
+                <ul>
+                    <li>패치 항목 1</li>
+                    <li>패치 항목 2</li>
+                    <li>패치 항목 3</li>
+                    <!-- 필요한 만큼 항목 추가 -->
+                </ul>
+            </section>
+        </main>
+    </div>
+    <script>
+        // JavaScript 코드 직접 포함
+        function addPatchItem(itemText) {
+            const patchList = document.querySelector('.patch-notes ul');
+            const newItem = document.createElement('li');
+            newItem.textContent = itemText;
+            patchList.appendChild(newItem);
+        }
+
+        // 초기 패치 노트 항목 추가 (예시)
+        addPatchItem('새로운 캐릭터 추가');
+        addPatchItem('새로운 맵 추가');
+    </script>
+</body>
+</html>
